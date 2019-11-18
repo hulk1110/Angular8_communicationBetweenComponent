@@ -6,7 +6,7 @@ import { CartService } from '../cart.service';
   selector: 'app-home',
   templateUrl: './product.component.html'
 })
-export class ProductComponent{
+export class ProductComponent {
   constructor(private cartService: CartService) {}
 
 

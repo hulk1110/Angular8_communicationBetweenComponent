@@ -2,6 +2,13 @@
     
 
 <div class="container">
+    <h1>components interaction using subject and Onseravable</h1>
     <router-outlet></router-outlet>
     <div *ngFor="let product of products">{{product.name}}</div>
+</div>
+
+
+<div class="container">
+    <h1>Parent to child communication demo</h1>
+    <app-parent></app-parent>
 </div>

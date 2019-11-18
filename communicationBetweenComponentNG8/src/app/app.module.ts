@@ -8,10 +8,15 @@ import { ProductComponent } from './product/product.component';
 
 // services
 import {CartService } from './cart.service';
+import { ParentComponent } from './parent/parent.component';
+
+import { ChildComponent } from './child/child.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent
+    ProductComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
