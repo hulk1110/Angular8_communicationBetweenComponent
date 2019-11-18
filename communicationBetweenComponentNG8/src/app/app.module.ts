@@ -11,12 +11,16 @@ import {CartService } from './cart.service';
 import { ParentComponent } from './parent/parent.component';
 
 import { ChildComponent } from './child/child.component';
+import { MissionControlComponent } from './mission-control/mission-control.component';
+import { AstronautComponent } from './astronaut/astronaut.component';
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    MissionControlComponent,
+    AstronautComponent
   ],
   imports: [
     BrowserModule,
