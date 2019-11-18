@@ -28,5 +28,7 @@ export class ParentComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  displayMessageFromChild(messageFromChile: any) {
+    alert(messageFromChile);
+  }
 }
