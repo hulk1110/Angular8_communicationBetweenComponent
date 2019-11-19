@@ -8,7 +8,9 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class ChildComponent implements OnInit {
 
   @Input() hero: any;
+  @Input() child: any[];
   @Output() messageFromChild = new EventEmitter();
+  @Output() addChildToParent = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit() {
@@ -16,5 +18,9 @@ export class ChildComponent implements OnInit {
 
   changedValue() {
     this.messageFromChild.emit('hello from child to parent');
+  }
+
+  addToParent(value: string) {
+    this.addChildToParent.emit(value);
   }
 }

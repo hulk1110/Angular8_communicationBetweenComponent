@@ -1,1 +1,1 @@
-<app-child [hero] =heros (messageFromChild)='displayMessageFromChild($event)' ></app-child>
+<app-child [hero] =heros [child]=childs (messageFromChild)='displayMessageFromChild($event)' (addChildToParent)='addToMyself($event)'></app-child>

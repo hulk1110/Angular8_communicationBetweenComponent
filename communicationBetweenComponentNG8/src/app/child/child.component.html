@@ -36,6 +36,32 @@
     </div>
     <h2>child to parent demo</h2>
     <button class='btn btn-primary' (click)="changedValue()">Click me to say hi to parent</button>
+
+
+
+    <div class="container">
+        <h2>child ka description</h2>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>child</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let ch of child">
+                    <td>{{ch}}</td>
+
+
+                </tr>
+
+            </tbody>
+        </table>
+           <input #addToParent placeholder="Add Child To parent">
+        <button  (click)="addToParent(addToParent.value)">click me to add child to parent</button>
+    </div>
 </body>
 
 </html>

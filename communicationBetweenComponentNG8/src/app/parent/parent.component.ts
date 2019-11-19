@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ParentComponent implements OnInit {
 
   heros: any;
-
+  childs: any[] = ['child1', 'child2', 'child3'];
 
 
   constructor() {
@@ -31,4 +31,9 @@ export class ParentComponent implements OnInit {
   displayMessageFromChild(messageFromChile: any) {
     alert(messageFromChile);
   }
+
+  addToMyself(eventFromChild: string) {
+    this.childs.push(eventFromChild);
+  }
+
 }
