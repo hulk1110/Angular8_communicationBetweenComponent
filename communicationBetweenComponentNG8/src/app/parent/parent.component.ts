@@ -13,16 +13,16 @@ export class ParentComponent implements OnInit {
 
   constructor() {
     this.heros = [{
-      name: 'h1',
-      age: 22
+      name: 'Superman',
+      age: 52
     },
     {
-      name: 'h1',
-      age: 22
+      name: 'Shaktiman',
+      age: 42
     },
     {
-      name: 'h1',
-      age: 22
+      name: 'gangadhar',
+      age: 55
     }];
   }
 
